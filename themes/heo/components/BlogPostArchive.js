@@ -63,6 +63,7 @@ const BlogPostArchive = ({ posts = [], archiveTitle, siteInfo }) => {
                         <Link
                           passHref
                           href={`/category/${post.category}`}
+                          style={{ fontSize: '0.75rem', lineHeight: '1rem' }}
                           className='cursor-pointer text-xs font-normal menu-link hover:text-indigo-700  dark:text-gray-600 transform'>
                           {post.category}
                         </Link>
