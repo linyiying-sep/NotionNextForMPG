@@ -44,7 +44,7 @@ const BlogPostCard = ({ index, post, showSummary, siteInfo }) => {
         {/* 文字区块 */}
         <div
           className={
-            'flex 2xl:p-4 flex-col justify-space-evenly h-36 md:h-full 2xl:h-48 w-full md:w-7/12 2xl:w-full'
+            'flex 2xl:p-4 flex-col justify-center h-36 md:h-full 2xl:h-48 w-full md:w-7/12 2xl:w-full'
           }>
           <header>
             {/* 分类 */}
