@@ -25,7 +25,7 @@ const BlogPostCard = ({ index, post, showSummary, siteInfo }) => {
       <div
         data-wow-delay='.2s'
         className={
-          'wow fadeInUp border bg-white dark:bg-[#1e1e1e] flex mb-4 flex-col h-[18rem] md:h-52 md:flex-row 2xl:h-120 2xl:flex-col group w-full dark:border-gray-600 hover:border-indigo-600  dark:hover:border-yellow-600 duration-300 transition-colors justify-between overflow-hidden rounded-xl'
+          'wow fadeInUp border bg-white dark:bg-[#1e1e1e] flex mb-4 flex-col h-[19rem] md:h-52 md:flex-row 2xl:h-120 2xl:flex-col group w-full dark:border-gray-600 hover:border-indigo-600  dark:hover:border-yellow-600 duration-300 transition-colors justify-between overflow-hidden rounded-xl'
         }>
         {/* 图片封面 */}
         {showPageCover && (
@@ -35,7 +35,7 @@ const BlogPostCard = ({ index, post, showSummary, siteInfo }) => {
                 priority={index === 0}
                 src={post?.pageCoverThumbnail}
                 alt={post?.title}
-                className='h-[11rem] w-full object-cover group-hover:scale-105 group-hover:brightness-75 transition-all duration-300'
+                className='h-[12rem] w-full object-cover group-hover:scale-105 group-hover:brightness-75 transition-all duration-300'
               />
             </div>
           </Link>
