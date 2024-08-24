@@ -81,10 +81,10 @@ export default function PostHeader({ post, siteInfo, isDarkMode }) {
                     href={`/tag/${encodeURIComponent(tag.name)}`}
                     passHref
                     className={
-                      'cursor-pointer inline-block text-[#fdf6e3] hover:text-white duration-200 py-0.5 px-1 whitespace-nowrap '
+                      'cursor-pointer inline-block text-[#4c3b30] hover:text-white duration-200 py-0.5 px-1 whitespace-nowrap '
                     }>
                     <div className='font-light flex items-center'>
-                      <HashTag className='text-gray-200 stroke-2 mr-0.5 w-3 h-3' />{' '}
+                      <HashTag className='text-[#4c3b30] stroke-2 mr-0.5 w-3 h-3' />{' '}
                       {tag.name + (tag.count ? `(${tag.count})` : '')}{' '}
                     </div>
                   </Link>
