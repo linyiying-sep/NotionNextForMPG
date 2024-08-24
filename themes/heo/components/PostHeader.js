@@ -94,7 +94,7 @@ export default function PostHeader({ post, siteInfo, isDarkMode }) {
           </div>
 
           {/* 文章Title */}
-          <div className='max-w-5xl font-bold text-3xl lg:text-5xl md:leading-snug shadow-text-md flex  justify-center md:justify-start text-white'>
+          <div className='max-w-5xl font-bold text-3xl lg:text-5xl md:leading-snug shadow-text-md flex  justify-center md:justify-start text-[#4c3b30]'>
             {siteConfig('POST_TITLE_ICON') && (
               <NotionIcon icon={post.pageIcon} />
             )}
@@ -102,7 +102,7 @@ export default function PostHeader({ post, siteInfo, isDarkMode }) {
           </div>
 
           {/* 标题底部补充信息 */}
-          <section className='flex-wrap dark:text-gray-200 text-opacity-70 shadow-text-md flex text-sm  justify-center md:justify-start mt-4 text-white font-light leading-8'>
+          <section className='flex-wrap dark:text-gray-200 text-opacity-70 shadow-text-md flex text-sm  justify-center md:justify-start mt-4 text-[#4c3b30] font-light leading-8'>
             <div className='flex justify-center '>
               <div className='mr-2'>
                 <WordCount />
