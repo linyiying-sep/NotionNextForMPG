@@ -99,8 +99,8 @@ export default function SlideOver(props) {
                         <div>{locale.COMMON.BLOG}</div>
                         {/* 导航按钮 */}
                         <div className='gap-2 grid grid-cols-2'>
-                          <Button title={'主页'} url={'/'} />
-                          <Button title={'关于'} url={'/about'} />
+                          <Button title={'主頁'} url={'/'} />
+                          <Button title={'關於'} url={'/about'} />
                         </div>
                         {/* 用户自定义菜单 */}
                         <MenuListSide {...props} />
