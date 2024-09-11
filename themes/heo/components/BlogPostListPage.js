@@ -1,5 +1,6 @@
 import { siteConfig } from '@/lib/config'
 import { useGlobal } from '@/lib/global'
+import CONFIG from '../config'
 import BlogPostCard from './BlogPostCard'
 import BlogPostListEmpty from './BlogPostListEmpty'
 import PaginationNumber from './PaginationNumber'
@@ -14,16 +15,18 @@ import PaginationNumber from './PaginationNumber'
  */
 const BlogPostListPage = ({ page = 1, posts = [], postCount, siteInfo }) => {
   const { NOTION_CONFIG } = useGlobal()
-  const POSTS_PER_PAGE = siteConfig('POSTS_PER_PAGE', null, NOTION_CONFIG)
+  const POSTS_PER_PAGE = siteConfig('POSTS_PER_PAGE', 12, NOTION_CONFIG)
   const totalPage = Math.ceil(postCount / POSTS_PER_PAGE)
   const showPagination = postCount >= POSTS_PER_PAGE
+  const POST_TWO_COLS = siteConfig('HEO_HOME_POST_TWO_COLS', true, CONFIG)
   if (!posts || posts.length === 0 || page > totalPage) {
     return <BlogPostListEmpty />
   } else {
     return (
       <div id='container' className='w-full'>
         {/* 文章列表 */}
-        <div className='grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid 2xl:grid-cols-4 grid-cols-1 gap-5'>
+        <div
+          className={`${POST_TWO_COLS && 'grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid 2xl:grid-cols-4'} grid-cols-1 gap-5`}>
           {posts?.map(post => (
             <BlogPostCard
               index={posts.indexOf(post)}
