@@ -76,7 +76,7 @@ const SocialButton = () => {
           <a
             target='_blank'
             rel='noreferrer'
-            title={'RSS'}
+            title={'FB'}
             href={'/rss/feed.xml'}>
             <i className='transform hover:scale-125 duration-150 fas fa-rss dark:hover:text-indigo-400 hover:text-indigo-600' />
           </a>
