@@ -81,12 +81,12 @@ const SocialButton = () => {
         {/*    <i className='transform hover:scale-125 duration-150 fas fa-rss dark:hover:text-indigo-400 hover:text-indigo-600' />*/}
         {/*  </a>*/}
         {/*)}*/}
-        {JSON.parse(siteConfig('CONTACT_FACEBOOK')) && (
+        {siteConfig('CONTACT_FACEBOOK') && (
           <a
             target='_blank'
             rel='noreferrer'
             title={'FB'}
-            href={siteConfig('CONTACT_INSTAGRAM')}>
+            href={siteConfig('CONTACT_FACEBOOK')}>
             <i className='transform hover:scale-125 duration-150 fa-brands fa-square-facebook dark:hover:text-indigo-400 hover:text-indigo-600' />
           </a>
         )}
