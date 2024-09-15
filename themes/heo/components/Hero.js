@@ -173,7 +173,7 @@ function GroupMenu() {
     <div className='h-[165px] select-none xl:h-20 flex flex-col justify-between xl:space-y-0 xl:flex-row w-28 lg:w-48 xl:w-full xl:flex-nowrap xl:space-x-3'>
       <Link
         href={url_1}
-        className='group relative overflow-hidden bg-gradient-to-r from-blue-500 to-blue-400 flex h-20 justify-start items-center text-white rounded-xl xl:hover:w-1/2 xl:w-1/3 transition-all duration-500 ease-in'>
+        className='group relative overflow-hidden bg-gradient-to-r from-yellow-500 to-yellow-200 flex h-20 justify-start items-center text-white rounded-xl xl:hover:w-1/2 xl:w-1/3 transition-all duration-500 ease-in'>
         <div className='font-bold lg:text-lg  pl-5 relative -mt-2'>
           {title_1}
           <span className='absolute -bottom-0.5 left-5 w-5 h-0.5 bg-white rounded-full'></span>
@@ -196,7 +196,7 @@ function GroupMenu() {
       </Link>
       <Link
         href={url_3}
-        className='group relative overflow-hidden bg-gradient-to-r from-orange-400 to-yellow-300 flex h-20 justify-start items-center text-white rounded-xl xl:hover:w-1/2 xl:w-1/3 transition-all duration-500 ease-in'>
+        className='group relative overflow-hidden bg-gradient-to-r from-green-500 to-green-200 flex h-20 justify-start items-center text-white rounded-xl xl:hover:w-1/2 xl:w-1/3 transition-all duration-500 ease-in'>
         <div className='font-bold lg:text-lg pl-5 relative -mt-2'>
           {title_3}
           <span className='absolute -bottom-0.5 left-5 w-5 h-0.5 bg-white rounded-full'></span>
