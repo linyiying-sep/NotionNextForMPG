@@ -72,13 +72,22 @@ const SocialButton = () => {
             <i className='transform hover:scale-125 duration-150 fas fa-envelope dark:hover:text-indigo-400 hover:text-indigo-600' />
           </a>
         )}
-        {JSON.parse(siteConfig('ENABLE_RSS')) && (
+        {/*{JSON.parse(siteConfig('ENABLE_RSS')) && (*/}
+        {/*  <a*/}
+        {/*    target='_blank'*/}
+        {/*    rel='noreferrer'*/}
+        {/*    title={'FB'}*/}
+        {/*    href={'/rss/feed.xml'}>*/}
+        {/*    <i className='transform hover:scale-125 duration-150 fas fa-rss dark:hover:text-indigo-400 hover:text-indigo-600' />*/}
+        {/*  </a>*/}
+        {/*)}*/}
+        {JSON.parse(siteConfig('CONTACT_FACEBOOK')) && (
           <a
             target='_blank'
             rel='noreferrer'
             title={'FB'}
-            href={'/rss/feed.xml'}>
-            <i className='transform hover:scale-125 duration-150 fas fa-rss dark:hover:text-indigo-400 hover:text-indigo-600' />
+            href={siteConfig('CONTACT_INSTAGRAM')}>
+            <i className='transform hover:scale-125 duration-150 fa-brands fa-square-facebook dark:hover:text-indigo-400 hover:text-indigo-600' />
           </a>
         )}
         {siteConfig('CONTACT_BILIBILI') && (
