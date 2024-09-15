@@ -182,6 +182,7 @@ function GroupMenu() {
           <i className='fa-solid fa-star text-4xl'></i>
         </div>
       </Link>
+       {/* 第二个标签在小屏上不显示 */}
       <Link
         href={url_2}
         className='group relative overflow-hidden bg-gradient-to-r from-red-500 to-yellow-500 flex h-20 justify-start items-center text-white rounded-xl xl:hover:w-1/2 xl:w-1/3 transition-all duration-500 ease-in'>
@@ -189,11 +190,10 @@ function GroupMenu() {
           {title_2}
           <span className='absolute -bottom-0.5 left-5 w-5 h-0.5 bg-white rounded-full'></span>
         </div>
-        <div className='hidden lg:block absolute right-6  duration-700 ease-in-out transition-all scale-[2] translate-y-6 rotate-12 opacity-20 group-hover:opacity-80 group-hover:scale-100 group-hover:translate-y-0 group-hover:rotate-0'>
+        <div className='absolute right-6  duration-700 ease-in-out transition-all scale-[2] translate-y-6 rotate-12 opacity-20 group-hover:opacity-80 group-hover:scale-100 group-hover:translate-y-0 group-hover:rotate-0'>
           <i className='fa-solid fa-fire-flame-curved text-4xl'></i>
         </div>
       </Link>
-      {/* 第三个标签在小屏上不显示 */}
       <Link
         href={url_3}
         className='group relative overflow-hidden bg-gradient-to-r from-teal-300 to-cyan-300 hidden h-20 xl:flex justify-start items-center text-white rounded-xl xl:hover:w-1/2 xl:w-1/3 transition-all duration-500 ease-in'>
@@ -201,7 +201,7 @@ function GroupMenu() {
           {title_3}
           <span className='absolute -bottom-0.5 left-5 w-5 h-0.5 bg-white rounded-full'></span>
         </div>
-        <div className='absolute right-6 duration-700 ease-in-out transition-all scale-[2] translate-y-6 rotate-12 opacity-20 group-hover:opacity-80 group-hover:scale-100 group-hover:translate-y-0 group-hover:rotate-0'>
+        <div className='hidden lg:block absolute right-6 duration-700 ease-in-out transition-all scale-[2] translate-y-6 rotate-12 opacity-20 group-hover:opacity-80 group-hover:scale-100 group-hover:translate-y-0 group-hover:rotate-0'>
           <i className='fa-solid fa-book-bookmark text-4xl '></i>
         </div>
       </Link>
