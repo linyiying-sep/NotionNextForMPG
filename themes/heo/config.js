@@ -23,7 +23,8 @@ const CONFIG = {
   HEO_HERO_TITLE_4: '熱門商品',
   HEO_HERO_TITLE_5: '好物推薦',
   HEO_HERO_TITLE_LINK: 'https://meowpawsgoodies.com',
-
+  // 英雄区遮罩文字
+  HEO_HERO_COVER_TITLE: '來去逛逛',
   // 英雄区显示三个置顶分类
   HEO_HERO_CATEGORY_1: { title: '必看精選', url: '/tag/必看精選' },
   HEO_HERO_CATEGORY_2: { title: '熱門產品', url: '/tag/熱門產品' },
@@ -118,6 +119,12 @@ const CONFIG = {
   HEO_SOCIAL_CARD_TITLE_2: '加入我们的社群讨论分享',
   HEO_SOCIAL_CARD_TITLE_3: '点击加入社群',
   HEO_SOCIAL_CARD_URL: 'https://docs.tangly1024.com/article/how-to-question',
+
+  // 底部统计面板文案
+  HEO_POST_COUNT_TITLE: '產品數量:',
+  HEO_SITE_TIME_TITLE: '建站天數:',
+  HEO_SITE_VISIT_TITLE: '訪問量:',
+  HEO_SITE_VISITOR_TITLE: '訪客數:',
 
   // *****  以下配置无效，只是预留开发 ****
   // 菜单配置

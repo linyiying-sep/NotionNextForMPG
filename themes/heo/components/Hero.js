@@ -73,12 +73,17 @@ function Banner(props) {
     router.push(`${siteConfig('SUB_PATH', '')}/${randomPost?.slug}`)
   }
 
+  // 遮罩文字
+  const coverTitle = siteConfig('HEO_HERO_COVER_TITLE')
+
   return (
     <div
       id='banners'
       onClick={handleClickBanner}
       className='hidden xl:flex xl:flex-col group h-full bg-white dark:bg-[#1e1e1e] rounded-xl border dark:border-gray-700 mb-3 relative overflow-hidden'>
-      <div id='banner-title' className='flex flex-col absolute top-10 left-10'>
+      <div
+        id='banner-title'
+        className='z-10 flex flex-col absolute top-10 left-10'>
         <div className='text-4xl font-bold mb-3  dark:text-white'>
           {siteConfig('HEO_HERO_TITLE_1', null, CONFIG)}
           <br />
@@ -115,10 +120,10 @@ function Banner(props) {
  * 英雄区左上角banner条中斜向滚动的图标
  */
 function TagsGroupBar() {
-  const groupIcons = siteConfig('HEO_GROUP_ICONS', null, CONFIG).concat(
-    siteConfig('HEO_GROUP_ICONS', null, CONFIG)
-  )
-
+  let groupIcons = siteConfig('HEO_GROUP_ICONS', null, CONFIG)
+  if (groupIcons) {
+    groupIcons = groupIcons.concat(groupIcons)
+  }
   return (
     <div className='tags-group-all flex -rotate-[30deg] h-full'>
       <div className='tags-group-wrapper flex flex-nowrap absolute top-16'>
@@ -194,6 +199,7 @@ function GroupMenu() {
           <i className='fa-solid fa-fire-flame-curved text-4xl'></i>
         </div>
       </Link>
+      {/* 第三个标签在小屏上不显示 */}
       <Link
         href={url_3}
         className='group relative overflow-hidden bg-gradient-to-r from-lime-500 to-lime-300 flex h-20 justify-start items-center text-white rounded-xl xl:hover:w-1/2 xl:w-1/3 transition-all duration-500 ease-in'>
